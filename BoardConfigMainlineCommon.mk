@@ -5,6 +5,8 @@
 
 USES_DEVICE_MAINLINE_COMMON := true
 
+MAINLINE_COMMON_PATH ?= device/mainline/common
+include $(MAINLINE_COMMON_PATH)/optional/options.mk
 include $(MAINLINE_COMMON_PATH)/optional/*/board.mk
 
 # Boot parameters
